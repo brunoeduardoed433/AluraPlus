@@ -6,6 +6,8 @@
     --cor-botao: #167BF7;
     --cor-de-fundo: #00030C;
 
+    --cor-efeito-botao: #3C92FA;
+
     --fonte-principal: 'Inter';
 }
 
@@ -14,7 +16,7 @@ body {
     color: var(--cor-primaria);
     font-family: var(--fonte-principal);
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 * {
@@ -67,4 +69,94 @@ body {
 
 .container__caixa {
     margin: 0 6em;
+}
+
+.container__secundario {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-primaria);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cor-secundaria);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--cor-primaria);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--cor-primaria);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.lista__link {
+    margin-left: 1em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cor-secundaria);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.lista__link a:hover {
+    color: var(--cor-botao);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-efeito-botao);
+    color: var(--cor-de-fundo);
 }
